@@ -1,0 +1,118 @@
+section{
+  padding: 90px 0 0;
+}
+.home_section{
+  padding-top: 50px;
+  position: relative;
+  display: block;
+}
+
+.home_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 50px;
+  align-items: center;
+}
+.home_container h4{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: rgb(255, 145, 0);
+}
+.home_container h1{
+  font-size: 40px;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.home_container p{
+  margin:  10px 0 30px;
+  color: black;
+  font-size: 15px;
+}
+.home_container .btn{
+  margin-top: 30px;
+  display: inline-block;
+  align-items: center;
+}
+.home_container button{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 145, 0);
+  font-weight: bold;
+  cursor: pointer;
+  border-color: rgb(255, 145, 0);
+}
+.home_container button:hover{
+  /* background-color: orange; */
+  transition: 0.3s;
+  box-shadow: 0 0 10px black;
+}
+.social_icons{
+  display: flex;
+  column-gap: 20px;
+  cursor: pointer;
+}
+.social_icons a{
+  font-size: 22px;
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  color: #333;
+  transition: .3s;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rbga(0,0,0,0.2);
+}
+.social_icons a:hover{
+  color: black;
+  box-shadow: 0 0 10px rgb(255, 145, 0);
+}
+
+.hero_img{
+  text-align: right;
+}
+
+@media screen and (max-widht:760px){
+  .home_container h4{
+    font-size: 16px;
+  }
+  .home_container h1{
+    font-size: 32px;
+  }
+  .home_container p{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:696px) {
+  .home_container{
+    grid-template-columns:1fr;
+    row-gap: 2rem;
+    justify-content: center;
+  }
+  .home_content{
+    order: 2;
+    text-align: center;
+    padding-left: 48px;
+  }
+  .home_content h4{
+    padding-right: 10px;
+  }
+  .social_icons{
+    justify-content: center;
+  }
+  .hero_img{
+    text-align: center;
+    position: relative;
+    left: 27px;
+  }
+}
+
+
